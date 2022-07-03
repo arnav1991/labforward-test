@@ -1,0 +1,5 @@
+{
+  "driver_websocket_port": 9000,
+  "mongo_uri": "mongodb+srv://arnav:bone3600@cluster0.zqlvn.mongodb.net/labforward-test?retryWrites=true&w=majority",
+  "encryption_key": "sample_key"
+}
