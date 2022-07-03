@@ -1,6 +1,6 @@
 # Introduction
 
-This project is done to simulate an instrument and driver communication. For this instrument part of node measures battery percentage of laptop and shares with the driver. This project is build keeping in mind that there can be multiple instruments, so for identification hardware uuid is used. All the data of instrument/s is being stored in mongodb which can be extracted using REST API. For data encryption AES256 is used. Below are the steps to setup and run the project.
+This project is done to simulate an instrument and driver communication. For this instrument part of node measures battery percentage of laptop and shares with the driver. This project is build keeping in mind that there can be multiple instruments, so for identification hardware uuid is used. All the data of instrument/s is being stored in mongodb which can be extracted using REST API. For data encryption AES256 is used. Below are the steps to setup and run the project. Communication between driver and instrument is done using TCP transport layer and WebSocket application layer.
 
 ## Steps To Setup and Run
 
@@ -15,7 +15,7 @@ All setup commands are given assuming you are in root directory of the repositor
 1. cd driver
 2. npm i
 3. npm start
-4. wait for <connected to mongodb> message to appear in terminal before proceeding further.
+4. wait for "connected to mongodb" message to appear in terminal before proceeding further.
 
 ### Instrument
 
@@ -35,4 +35,15 @@ Once you have successfully setup the project. You will be able to get your devic
 ---
 
 **response**
-`{ "data": [ { "_id": "62c1fe4b2ae749c29b8d2976", "instrument_id": "X75H6NQKGH", "createdAt": "2022-07-03T20:38:35.334Z", "updatedAt": "2022-07-03T21:24:02.497Z", "__v": 0, "battery_percentage": 60 } ] }`
+`{
+    "data": [
+        {
+            "_id": "62c20d072b984f5414677c31",
+            "instrument_id": "X75H6NQKGH",
+            "createdAt": "2022-07-03T21:41:27.223Z",
+            "updatedAt": "2022-07-03T21:46:15.044Z",
+            "__v": 0,
+            "battery_percentage": 55
+        }
+    ]
+}`
