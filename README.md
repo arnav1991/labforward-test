@@ -30,20 +30,24 @@ All setup commands are given assuming you are in root directory of the repositor
 Once you have successfully setup the project. You will be able to get your device using the below given API. The battery percentage will be given in the response
 
 **curl**
-`curl --location --request GET 'http://localhost:3000/instrument/instruments'`
+```
+curl --location --request GET 'http://localhost:3000/instrument/instruments'
+```
 
 ---
 
 **response**
-`{
-    "data": [
-        {
-            "_id": "62c20d072b984f5414677c31",
-            "instrument_id": "X75H6NQKGH",
-            "createdAt": "2022-07-03T21:41:27.223Z",
-            "updatedAt": "2022-07-03T21:46:15.044Z",
-            "__v": 0,
-            "battery_percentage": 55
-        }
-    ]
-}`
+```
+{
+  "data": [
+      {
+          "_id": "62c20d072b984f5414677c31",
+          "instrument_id": "X75H6NQKGH",
+          "createdAt": "2022-07-03T21:41:27.223Z",
+          "updatedAt": "2022-07-03T21:46:15.044Z",
+          "__v": 0,
+          "battery_percentage": 55
+      }
+  ]
+}
+```
